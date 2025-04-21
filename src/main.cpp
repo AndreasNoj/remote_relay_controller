@@ -33,6 +33,7 @@ void setup() {
   SensESPAppBuilder builder;
   sensesp_app = (&builder)
                     ->set_hostname("Remote-Relay-Control")
+                    ->set_wifi_client("Obelix", "obelix2idefix")
                     ->get_app();
 
   const int num_relays = 4;
